@@ -1,5 +1,9 @@
+import WeatherSkeleton from "@/components/loading-skeleton";
+
 const WeatherDashboard = () => {
-  return <div>WeatherDashboard</div>;
+  return <div>
+    <WeatherSkeleton />
+  </div>;
 };
 
 export default WeatherDashboard;
