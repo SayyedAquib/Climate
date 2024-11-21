@@ -44,7 +44,7 @@ export function CitySearch() {
   };
 
   return (
-    <>
+    <div>
       <Button
         variant="outline"
         className="relative w-full justify-start text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64"
@@ -54,7 +54,7 @@ export function CitySearch() {
         Search cities...
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <div className="mx-4 mt-4 border-b-2">
+        <div className="mx-4 mt-4 border-b-2 hidden md:block">
           <DialogTitle className="text-lg mb-2 font-semibold">
             City Search
           </DialogTitle>
@@ -172,6 +172,6 @@ export function CitySearch() {
           </CommandList>
         </Command>
       </CommandDialog>
-    </>
+    </div>
   );
 }
