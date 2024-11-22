@@ -17,7 +17,7 @@ const App = () => {
           v7_relativeSplatPath: true,
         }}
       >
-        <ThemeProvider defaultTheme="system">
+        <ThemeProvider defaultTheme="dark">
           <Layout>
             <Routes>
               <Route path="/" element={<WeatherDashboard />} />
